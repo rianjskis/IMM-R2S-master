@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_URL: https://github.com/immortalwrt/immortalwrt.git
   REPO_BRANCH: 23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: imm-r2s.config
