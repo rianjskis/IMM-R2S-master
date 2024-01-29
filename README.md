@@ -1,3 +1,11 @@
+每月1，15日自动编译更新
+
+地址: 192.168.3.2
+
+用户名: root
+
+密码: 空
+
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
 # Actions-OpenWrt
