@@ -13,7 +13,7 @@ name: imm-自动更新
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: master
+  REPO_BRANCH: 23.05
   TZ: Asia/Shanghai
 on:
   workflow_dispatch:
