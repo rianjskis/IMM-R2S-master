@@ -12,7 +12,5 @@
 
 # Modify default IP
 rm -rf feeds/luci/applications/luci-app-alist
-rm -rf feeds/luci/themes/luci-theme-argon
 sed -i 's/192.168.1.1/192.168.3.2/g' package/base-files/files/bin/config_generate
-git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone https://github.com/sbwml/luci-app-alist package/luci-app-alist
