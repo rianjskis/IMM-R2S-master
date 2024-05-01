@@ -39,7 +39,7 @@ jobs:
 
     steps:
     - name: 检查
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: 初始化环境变量
       env:
@@ -105,7 +105,7 @@ jobs:
       run: df -hT
 
     - name: 上传bin目录
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
@@ -121,7 +121,7 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: 上传固件目录
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
