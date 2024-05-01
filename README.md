@@ -5,7 +5,7 @@
 用户名: root
 
 密码: 空
-
+https://github.com/P3TERX/Actions-OpenWrt
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
 # Actions-OpenWrt
