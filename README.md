@@ -5,9 +5,8 @@
 用户名: root
 
 密码: 空
-https://github.com/P3TERX/Actions-OpenWrt
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
-
+https://github.com/P3TERX/Actions-OpenWrt
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
