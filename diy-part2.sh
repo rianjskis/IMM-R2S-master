@@ -12,7 +12,6 @@
 
 # Modify default IP跟时区
 sed -i 's/192.168.1.1/192.168.3.2/g' package/base-files/files/bin/config_generate
-sed -i 's/192.168.1.255/192.168.3.255/g' package/base-files/files/bin/config_generate
 
 # 插件
 rm -rf feeds/luci/applications/luci-app-passwall
