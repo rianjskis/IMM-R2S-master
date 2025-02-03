@@ -54,4 +54,4 @@ jobs:
     - name: 删除工作流程运行  
       uses: Mattraks/delete-workflow-runs@v2
       with:
-        keep_minimum_runs: 20
+        keep_minimum_runs: 5
