@@ -12,10 +12,6 @@
 
 # Modify default IP跟时区
 sed -i 's/192.168.1.1/192.168.3.2/g' package/base-files/files/bin/config_generate
-sed -i "/set network.\$1.netmask='\$netm'/a \    set 
-network.\$1.gateway='192.168.3.1'\n    set 
-network.\$1.dns='192.168.3.1'" 
-package/base-files/files/bin/config_generate  
 sed -i "/set system.@system\[-1\].timezone='UTC'/{
 s/set system.@system\[-1\].timezone='UTC'/set system.@system\[-1\].timezone='CST-8'/
 a\                set system.@system[-1].zonename='Asia/Shanghai'
