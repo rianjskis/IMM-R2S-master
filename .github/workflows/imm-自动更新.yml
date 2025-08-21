@@ -50,8 +50,3 @@ jobs:
       with:
         token: ${{ github.token }}
         event-type: Source Code Update
-
-    - name: 删除工作流程运行  
-      uses: Mattraks/delete-workflow-runs@v2
-      with:
-        keep_minimum_runs: 5
