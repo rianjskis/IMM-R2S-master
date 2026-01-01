@@ -20,6 +20,5 @@ a\                set system.@system[-1].zonename='Asia/Shanghai'
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-openclash
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
-git clone https://github.com/OpenListTeam/OpenList-OpenWRT package/openlist
 sed -i '$a /root' package/base-files/files/etc/sysupgrade.conf    # 编译时默认插入root目录,升级时root目录不清空
 sed -i '$a /etc/init.d/pwm-fan' package/base-files/files/etc/sysupgrade.conf
