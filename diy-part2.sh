@@ -25,7 +25,6 @@ rm -rf package/feeds/packages/mwan3
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 sed -i '$a /root' package/base-files/files/etc/sysupgrade.conf    # 编译时默认插入root目录,升级时root目录不清空
 sed -i '$a /etc/init.d/pwm-fan' package/base-files/files/etc/sysupgrade.conf
-
 cd
 git clone -b openwrt-25.12 --filter=blob:none --no-checkout https://github.com/immortalwrt/packages.git
 cd packages
@@ -33,7 +32,7 @@ git sparse-checkout init --cone
 git sparse-checkout set net/mwan3
 git checkout
 cd
-mv packages/net/mwan3 openwrt/package/
+mv packages/net/mwan3 openwrt/package/feeds/packages
 
 
 git clone -b openwrt-25.12 --filter=blob:none --no-checkout https://github.com/immortalwrt/luci.git
@@ -47,4 +46,4 @@ cd
 mv \
   luci/applications/luci-app-mwan3 \
   luci/applications/luci-app-syncdial \
-  openwrt/package/
+  openwrt/package/feeds/luci
