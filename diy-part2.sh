@@ -19,32 +19,7 @@ a\                set system.@system[-1].zonename='Asia/Shanghai'
 # 插件
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-openclash
-rm -rf feeds/luci/applications/luci-app-mwan3
-rm -rf feeds/luci/applications/luci-app-syncdial
-rm -rf feeds/packages/mwan3
 
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/luci-app-passwall2
 sed -i '$a /root' package/base-files/files/etc/sysupgrade.conf    # 编译时默认插入root目录,升级时root目录不清空
 sed -i '$a /etc/init.d/pwm-fan' package/base-files/files/etc/sysupgrade.conf
-cd
-git clone -b openwrt-25.12 --filter=blob:none --no-checkout https://github.com/immortalwrt/packages.git
-cd packages
-git sparse-checkout init --cone
-git sparse-checkout set net/mwan3
-git checkout
-cd
-mv packages/net/mwan3 openwrt/package
-
-
-git clone -b openwrt-25.12 --filter=blob:none --no-checkout https://github.com/immortalwrt/luci.git
-cd luci
-git sparse-checkout init --cone
-git sparse-checkout set \
-  applications/luci-app-mwan3 \
-  applications/luci-app-syncdial
-git checkout
-cd
-mv \
-  luci/applications/luci-app-mwan3 \
-  luci/applications/luci-app-syncdial \
-  openwrt/package
