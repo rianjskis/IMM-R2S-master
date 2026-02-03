@@ -9,7 +9,7 @@
 # See /LICENSE for more information.
 #
 
-name: imm-自动更新
+name: imm-自动更新-23.05
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
