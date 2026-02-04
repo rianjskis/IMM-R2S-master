@@ -9,11 +9,11 @@
 # See /LICENSE for more information.
 #
 
-name: imm-自动更新-23.05
+name: imm-自动更新
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git
-  REPO_BRANCH: openwrt-23.05
+  REPO_BRANCH: openwrt-25.12
   TZ: Asia/Shanghai
 on:
   workflow_dispatch:
