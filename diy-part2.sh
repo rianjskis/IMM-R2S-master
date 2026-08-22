@@ -16,6 +16,7 @@ sed -i "/set system.@system\[-1\].timezone='UTC'/{
 s/set system.@system\[-1\].timezone='UTC'/set system.@system\[-1\].timezone='CST-8'/
 a\                set system.@system[-1].zonename='Asia/Shanghai'
 }" package/base-files/files/bin/config_generate
+# 文件管理
 git clone https://github.com/kenzok78/luci-app-fileassistant.git package/luci-app-fileassistant
 # 插件
 rm -rf feeds/luci/applications/luci-app-passwall
